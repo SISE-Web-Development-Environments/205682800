@@ -8,7 +8,7 @@
 <script async defer crossorigin="anonymous"
  src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
  <picture id="logo">
-  <img width="166px" height="50" src="logo.png">
+  <img width="166px" height="50" src="image\logo.png">
  </picture>
 <div id="menu" >
 <li><a href="#about">About Me</a></li>
@@ -203,8 +203,8 @@ data-href="https://www.facebook.com/Homer-Jay-Simpson-38152061121/" data-width="
 <h2>
   scan Homar code
 </h2>
-
 <br/>
+<img src="image/homarSite.png" style="width:20%">
 <br/>
 <br/>
 </section>
@@ -230,26 +230,24 @@ data-href="https://www.facebook.com/Homer-Jay-Simpson-38152061121/" data-width="
   contact Homar
 </h2>
 <br/>
-<div id="after_submit"></div>
-<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-  <div class="row">
-    <label class="required" for="name">Your name:</label><br />
-    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-    <span id="name_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="email">Your email:</label><br />
-    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-    <span id="email_validation" class="error_message"></span>
-  </div>
-  <div class="row">
-    <label class="required" for="message">Your message:</label><br />
-    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-    <span id="message_validation" class="error_message"> </span>
-  </div>
-    
+<div class="container">
+  <from action="mailto:or.shoshani27@gmail.com">
+    <div class="row">
+      <label class="required" for="name">Your name:</label><br />
+      <input id="name" class="input" name="name" type="text" placeholder="name" /><br />
+    </div>
+    <div class="row">
+      <label class="required" for="email">Your email:</label><br />
+      <input id="email" class="input" name="email" type="text" placeholder="E-mail" /><br />
+    </div>
+    <div class="row">
+      <label class="required" for="message">Your message:</label><br />
+      <textarea id="message" class="input" name="message" rows="7" cols="30" ></textarea><br />
+    </div>
     <input id="submit_button" type="submit" value="Send email" />
-</form>
+
+  </from>
+
 <br/>
 </section>
 
