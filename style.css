@@ -110,7 +110,14 @@
   #submit_button {
 	background-color: rgb(250, 234, 11);
 	height: 30px;
-	width: 20%;
+	width: 100px;
+	color: black;
+	font-weight: bold;
+  }
+  #reset_button {
+	background-color: rgb(250, 234, 11);
+	height: 30px;
+	width: 100px;
 	color: black;
 	font-weight: bold;
   }
@@ -128,12 +135,26 @@
 	margin-top: 10px;
 	z-index: -1;
   }
-  #submit_button{
-	width: 100px; 
-  }
   .homarimg{
 	  width: 50%;
   }
+  .answer{
+	text-align: right;
+	max-width: 1200px;
+	margin-bottom: 100px;
+  }
+  .title{
+	text-align: right;
+	font-weight: bold;
+	text-decoration: underline;
+
+  }
+ #ans1{
+	 list-style-type: disc;
+ }
+
+  
+
  
 
 

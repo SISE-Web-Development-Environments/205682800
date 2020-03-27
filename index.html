@@ -3,7 +3,8 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script src="vanilla-emoji-picker-master/dist/emojiPicker.min.js"></script>
-<script src="vanilla-emoji-picker-master/dist/emojiPicker.js">
+<script 
+  src="vanilla-emoji-picker-master/dist/emojiPicker.js">
 </script>
 </head>
 <body>
@@ -56,11 +57,11 @@
 </p>
 </div>
 </section>
-
-
 <section id="photos" class="section">
 </br>
-<h2>Homar's photos </h2>
+<h2>
+  Homar's photos 
+</h2>
 <div class="slideshow-container" >
   <div id="images">
       <div class="mySlides fade">
@@ -92,7 +93,7 @@
         <div class="numbertext">6 / 6</div>
         <img class="homarimg" src="https://img1.looper.com/img/gallery/homer-simpsons-backstory-explained/intro-1568401380.jpg" style="padding-top: 90px;">
       </div>
-</div>
+  </div>
 </div>
 <div style="text-align:center">
   <a class="prev" onclick="plusSlides(-1)">&#10094; </a>
@@ -142,17 +143,37 @@ data-layout="standard" data-action="like" data-size="large" data-share="true"></
 <h2>
   ans
 </h2>
-<div id="ans">
-  <p dir="rtl">
-    1. שלושת ההבדלים העיקריים בין web1, web2, web3
-    </br>
-        1. web1 הוא דפדפן רק לאדם אחד
-  </p>
+<div class="answer" dir="rtl">
+   <p class="title"> 1. שלושת ההבדלים העיקריים בין web1, web2, web3</br> </p>
+    <ol id="ans1"> 
+      <li:a>
+          *  web1 הוא דפדפן לקריאה בלבד ודפי האינטרנט היו סאטטיים. </br>
+              הצרכן לא יכל לשנות את המידע באתר והיתה אינטרקציה נמוכנה בין הצרכן לאתר</br>
+          *  web2 הוא דפדפן לקריאה וכתיבה, דפי האינטרנט היו דינאמיים.</br>
+             הקהל יכל להגיב ולשנות מידע שכתוב באינטרנט ודפי האינטרנט הפכו לשיתופיים.</br>
+          *  web3 הוא דפדפן דינאי שמאפשר קריאה וכתיבה ובנוסף מאפשר לקבל המלצות.</br></br>
+      </li:a>
+      <li:a>
+          *  web1: על מנת לבצע חיפוש יש צורך לכתוב קישור url מדוייק.</br>
+          *  web2: מאפשר לחפש דף אינטרנט ע"י חיפוש תגיות</br>
+          *  web3: מאפשר חיפוש רחב יותר מאשר תגיות, מאפשר חיפוש דף אינטרנט ע"י תוכן הדף עצמו.</br></br>
+      </li:a>
+      <li:a>
+          *  web1: קיימים מליון משתמשים</br>
+          *  web2: קיימים בליון משתמשים</br>
+          *  web3: קיימים טרליון משתמשים</br></br>
+      </li:a>
+    </ol> 
+    <p class="title">2. USE-CASE לחיפוש תופעות לוואי לתרופה</p>
+    <ol dir="rtl">
+      <li:a>
+        ניקח תרופה שם של תרופה מסויימת על מנת שנראה את ההבדלים לדוגמא "תופעות לוואי של אופטלגין"</br></br>
+        1. web1: המשתמש צריך להכניס קישור (url) מדוייק של האתר שמציג את המידע על "תופעות לוואי של אופטלגין"</br></br>
+        2. web2: המשתמש יכול להשתמש בחיפוש - "תופעות לוואי של אופטלגין", לקבל לינק של הדף שמתקבל בחיפוש</br></br>
+        3. web3: המשתמש יכול להשתמש בחיפוש -"תופעות לוואי של אופטלגין" או חלק מהמילים והוא יקבל לינק לדף המבוקש או חלקים מאתר של הנושא.
+      </li:a>
+    </ol>
 </div>
-
-<br/>
-<br/>
-<br/>
 </section>
 
 <section id="contact" class="section">
@@ -161,14 +182,15 @@ data-layout="standard" data-action="like" data-size="large" data-share="true"></
 </h2>
 <div id="conect">
 <p>
-<form action="mailto:or.shoshani27@gmail.com">
+<form method="POST" enctype="text/plain" action="mailto:or.shoshani27@gmail.com"  >
   <label class="required" for="name">Your name:</label><br />
   <input id="name" class="input" name="name" type="text" placeholder="name" /><br />
   <label class="required" for="email">Your email:</label><br />
   <input id="email" class="input" name="email" type="text" placeholder="E-mail" /><br />
   <label class="required" for="message">Your message:</label><br />
-  <textarea id="message" data-emoji-picker="true" class="input" name="message" rows="7" cols="30" ></textarea><br />
+  <textarea id="message" type="text"  data-emoji-picker="true" class="input" name="message" rows="7" cols="30" ></textarea><br />
   <input id="submit_button"  type="submit" value="Send email" />
+  <input id="reset_button" type="reset" value="Reset"/>
 </form>
 </p>
 </div>
