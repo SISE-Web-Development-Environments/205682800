@@ -4,7 +4,7 @@
 	top: 0;
 	width: 85%;
 	left: 15%;
-	background: rgb(241, 238, 15);
+	background:#9fdfbf;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -17,8 +17,12 @@
 }
 #logo
 {
+	top:0;
+	left: 0;
+	text-align: left;
 	position: fixed;
 	width: 15%;
+	height: 9px;
 }
 #logo img{
 	width: 100%;
@@ -27,33 +31,36 @@
   li{
 	float: left;
 	display: block;
-	color:  black	;
 	text-align: center;
-	padding: 14px 30px;
+	padding: 15.5px 30px;
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
+	font-size: 16.5px;
 	flex: 1;
 
   }
   li:hover {
-	background-color: #ffff00;
+	background-color: #b3e6cc;
   }
   body{
 	  background: cornsilk;
+	  height: 100%; 
+  	background: linear-gradient(20deg, #ff4d4d 0%, #ff6666 20%, #ff9999 54%, #ffcccc 85%);	
   }
 
   h1{
 	  margin: auto;
 	  position: static;
-	  font-family: URW Chancery L, cursive;
+	  font-family:'Nehama', serif;
 	  text-align: center;
-	  font-size: 90px;
+	  font-size: 110px;
+	  color: tomato;
   }
   h2{
 	text-align: center;
 	font-size: 40px;
-	font-family: URW Chancery L, cursive;
+	font-family: 'Shuneet', serif;
 	margin-top: 5%;
 	margin-bottom: 5%;
   }
@@ -71,9 +78,8 @@
 /* Slideshow container */
 .slideshow-container {
   width: 700px;
-  height: 420px;
+  height: 535px;
   position: static;
-  margin-top: 5%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3%;
@@ -92,7 +98,6 @@
 
   }
 
-  /* The dots/bullets/indicators */
   .dot {
 	cursor: pointer;
 	height: 15px;
@@ -115,7 +120,7 @@
   }
   
   #submit_button {
-	background-color: rgb(250, 234, 11);
+	background-color: #ffcccc;
 	width: 20%;
 	padding: 6px 3px 6px 3px;
 	margin: auto;
@@ -123,7 +128,7 @@
 	border: none;
   }
   #reset_button {
-	background-color: rgb(250, 234, 11);
+	background-color: #ffcccc;
 	width: 20%;
 	padding: 6px 3px 6px 3px;
 	margin: auto;
@@ -166,6 +171,71 @@
 	text-decoration: underline;
 
   }
+  .flip-card {
+	margin-left: 15%;
+	margin-right: 5%;
+	display: flexbox;
+	flex-flow: row;
+	float: left;
+
+	background-color: transparent;
+	width: 300px;
+	height: 350px;
+	perspective: 1000px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden; /* Safari */
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+	background-color: rgb(182, 7, 7);
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color: #ffe6e6;
+	color: black;
+	transform: rotateY(180deg);
+  }
+  #like{
+	  margin-top: 30%;
+  }
+  #fb-like{
+	  text-align: center;
+	  margin-right: 10%;
+  }
+  .front-head{
+	  font-size: 50px;
+	  font-family:'Nehama', serif;
+	  padding-top: 70px;
+
+
+  }
+ 
+
 
 
   
